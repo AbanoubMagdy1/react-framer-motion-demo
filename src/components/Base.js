@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HoveredLi from './HoveredLi';
+import RouteAnimated from './RouteAnimated';
 
 const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
   return (
+    <RouteAnimated id="base">
     <div className="base container">
 
       <h3>Step 1: Choose Your Base</h3>
@@ -12,9 +15,9 @@ const Base = ({ addBase, pizza }) => {
         {bases.map(base => {
           let spanClass = pizza.base === base ? 'active' : '';
           return (
-            <li key={base} onClick={() => addBase(base)}>
+            <HoveredLi key={base} onClick={() => addBase(base)}>
               <span className={spanClass}>{ base }</span>
-            </li>
+            </HoveredLi>
           )
         })}
       </ul>
@@ -28,6 +31,7 @@ const Base = ({ addBase, pizza }) => {
       )}
 
     </div>
+    </RouteAnimated>
   )
 }
 
