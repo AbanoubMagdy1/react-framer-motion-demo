@@ -1,6 +1,5 @@
 import React from 'react';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { PizzaContext } from '../providers/PizzaProvider';
 import AnimatedNextButton from './AnimatedNextButton';
 import HoveredLi from './HoveredLi';
