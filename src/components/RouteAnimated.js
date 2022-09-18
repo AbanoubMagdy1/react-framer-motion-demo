@@ -6,7 +6,15 @@ const variant = {
   visible: {
     x: 0, 
     opacity: 1,
-    transition: {duration: .5, type: 'spring', stiffness: 40}
+    transition: {
+      duration: .5,
+      type: 'spring',
+      stiffness: 40,
+      mass: .3,
+      damping: 7,
+      when: "beforeChildren",
+      staggerChildren: .5
+    },
   },
   exit: {
     opacity: 0,
