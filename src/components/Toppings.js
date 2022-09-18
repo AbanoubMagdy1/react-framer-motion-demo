@@ -1,9 +1,13 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { PizzaContext } from '../providers/PizzaProvider';
 import HoveredLi from './HoveredLi';
 import RouteAnimated from './RouteAnimated';
 
-const Toppings = ({ addTopping, pizza }) => {
+const Toppings = () => {
+  const {pizza, addTopping} = useContext(PizzaContext);
+
   let toppings = ['mushrooms', 'peppers', 'onions', 'olives', 'extra cheese', 'tomatoes'];
 
   return (

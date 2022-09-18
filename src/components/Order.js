@@ -1,7 +1,12 @@
 import React from 'react';
+import { useContext } from 'react';
+import { PizzaContext } from '../providers/PizzaProvider';
 import RouteAnimated from './RouteAnimated';
 
-const Order = ({ pizza }) => {
+const Order = () => {
+  const { pizza } = useContext(PizzaContext);
+
+
   return (
     <RouteAnimated>
     <div className="container order">
