@@ -3,7 +3,7 @@ import RouteAnimated from './RouteAnimated';
 
 const Order = ({ pizza }) => {
   return (
-    <RouteAnimated id="order">
+    <RouteAnimated>
     <div className="container order">
       <h2>Thank you for your order :)</h2>
       <p>You ordered a {pizza.base} pizza with:</p>

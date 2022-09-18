@@ -5,7 +5,7 @@ import RouteAnimated from './RouteAnimated';
 
 const Home = () => {
   return (
-    <RouteAnimated id="home">
+    <RouteAnimated>
       <div className="home container">
         <motion.h2 animate={{}}>
           Welcome to Pizza Joint

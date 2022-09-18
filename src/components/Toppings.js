@@ -7,7 +7,7 @@ const Toppings = ({ addTopping, pizza }) => {
   let toppings = ['mushrooms', 'peppers', 'onions', 'olives', 'extra cheese', 'tomatoes'];
 
   return (
-    <RouteAnimated id="toppings">
+    <RouteAnimated>
       <div className="toppings container">
         
         <h3>Step 2: Choose Toppings</h3>

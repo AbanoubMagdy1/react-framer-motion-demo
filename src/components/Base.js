@@ -7,7 +7,7 @@ const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
   return (
-    <RouteAnimated id="base">
+    <RouteAnimated>
     <div className="base container">
 
       <h3>Step 1: Choose Your Base</h3>
