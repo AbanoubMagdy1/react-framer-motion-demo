@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { PizzaContext } from '../providers/PizzaProvider';
+import AnimatedNextButton from './AnimatedNextButton';
 import HoveredLi from './HoveredLi';
 import RouteAnimated from './RouteAnimated';
 
@@ -26,11 +27,9 @@ const Toppings = () => {
           })}
         </ul>
 
-        <Link to="/order">
-          <button>
-            Order
-          </button>
-        </Link>
+          {pizza.toppings.length > 0 && (
+            <AnimatedNextButton path="/order" text="Order"/>
+          )}
 
       </div>
     </RouteAnimated>
