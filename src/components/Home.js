@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import RouteAnimated from './RouteAnimated';
+import Loader from './Loader';
 
 const buttonVariant = {
   hover: {
@@ -24,6 +25,7 @@ const Home = () => {
             Create Your Pizza
           </motion.button>
         </Link>
+        <Loader/>
       </div>
     </RouteAnimated>
     
